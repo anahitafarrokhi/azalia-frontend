@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-slide-up {
+    @apply translate-y-0 opacity-100;
+    animation: slideUp 0.3s ease-out forwards;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Montserrat ;
+}
+
+
+
+
+
+
+
