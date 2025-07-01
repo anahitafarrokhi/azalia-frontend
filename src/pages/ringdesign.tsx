@@ -37,7 +37,7 @@ function Modal({ onClose }: { onClose: () => void; }) {
       <div className="bg-white p-6 rounded-lg shadow-lg w-96">
         <h2 className="text-xl font-bold text-center">Select a Diamond</h2>
         <p className="text-gray-600 text-center mt-2">
-          Please select a diamond to proceed to the next step.
+          Please 1111select a diamond to proceed to the next step.
         </p>
         <div className="flex justify-center gap-4 mt-4">
           <button className="bg-black text-white px-4 py-2 rounded-md" onClick={onClose}>
