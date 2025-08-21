@@ -136,7 +136,7 @@ const ProductDetailDesc: React.FC<ProductDetailDescProps> = ({ product, engravin
             }}
           />)}
           <p className="text-sm text-gray-500">
-            {product.ayar} {product.color} {product.jewelleryType.name}
+            {product.ayar} {product.color} {product.jewelleryType?.name}
           </p>
         </div>
       </div>
