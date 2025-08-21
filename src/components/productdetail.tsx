@@ -36,9 +36,10 @@ useEffect(() => {
 
 if (!product) return <p className="p-6">Loading...</p>;
 
-const imageUrls = product?.images?.$values?.map((img: any) =>
+const imageUrls = product?.images?.map((img: any) =>
   img.imageUrl.replace(/\\/g, "/")
 ) || [];
+console.log(imageUrls,"hhhhhhhh")
   return (
     <div className="mt-10">
       <div className=" flex flex-col md:flex-row items-center md:items-start">

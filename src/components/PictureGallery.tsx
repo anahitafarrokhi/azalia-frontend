@@ -16,6 +16,7 @@ const PictureGallery: React.FC<PictureGalleryProps> = ({ pictures }) => {
   const handleThumbnailClick = (picture: string) => {
     setSelectedPicture(picture);
   };
+  console.log(selectedPicture,pictures,"dfdfsfsffsdfsf");
 
   return (
     <div className="flex flex-col md:flex-row gap-4">
